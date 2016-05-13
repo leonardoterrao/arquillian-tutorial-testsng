@@ -81,9 +81,7 @@
         </plugins>
     </build>
 
-
     <profiles>
-
         <profile>
             <id>weld</id>
 
@@ -120,7 +118,6 @@
 
             <build>
                 <plugins>
-                    <!-- You need the maven dependency plugin to download locally a zip with the server, unless you provide your own, it will download under the /target directory -->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-dependency-plugin</artifactId>
@@ -155,7 +152,6 @@
                             <parallel>false</parallel>
                             <groups>arquillian</groups>
                             <reportsDirectory>target/surefire-reports/</reportsDirectory>
-                            <!-- Fork every test because it will launch a separate AS instance -->
                             <forkMode>always</forkMode>
                             <systemPropertyVariables>
                                 <java.util.logging.manager>org.jboss.logmanager.LogManager</java.util.logging.manager>
