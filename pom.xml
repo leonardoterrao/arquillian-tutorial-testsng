@@ -96,7 +96,7 @@
         </profile>
 
         <profile>
-            <id>wildfly82-embedded</id>
+            <id>wildfly</id>
             <properties>
                 <filter.name>desenvolvimento</filter.name>
             </properties>
